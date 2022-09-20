@@ -62,7 +62,7 @@ var excelToJson = function(){
             obj[key] = values[index];
         })
     })
-    writeJSON(JsonList);
+    writeJSON(objList);
 }
 /**
  * excel 
