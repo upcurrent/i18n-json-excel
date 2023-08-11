@@ -3,10 +3,8 @@ const fs = require('fs');
 
 const {getFlatObj,resetKey} = require('./i18n-json-parse');
 console.log('getFlatObj,resetKey',getFlatObj,resetKey);
-const jsonPath = 'F:/theSaltWater/edgs-client/src/renderer/locales/lang';
+const jsonPath = './lang';
 const excelPath = './templage.xls';
-// let jsonPath = 'F:/theSaltWater/xzlsjq-oms-mall-web/src/locales';
-// let jsonPath = 'F:/theSaltWater/xzlsjq-oms-mall-h5/i18n';
 let locales = [];
 var readJSONDir = function (pathStr) {
     fs.readdir(pathStr, function (err, files) {
